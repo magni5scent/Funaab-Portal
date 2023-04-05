@@ -1,5 +1,334 @@
 * {
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-family: 'Quicksand', sans-serif;
    padding: 0;
    margin: 0;
+   box-sizing: border-box;
+}
+
+
+
+/* Green Top Header */
+.greentop {
+   display: flex;
+   padding-left: auto;
+   background: rgb(3, 54, 3);
+   margin-right: auto;
+}
+
+#funaabLogo {
+   margin-left: 90px;
+   padding-top: 10px; padding-bottom: 10px;
+}
+
+.spreadLinks {
+   margin-left: auto;
+   padding-top: 10px;
+   margin-right: 90px;
+   font-size: 13px;
+}
+
+.spreadLinks a {
+   text-decoration: none;
+   color: white;
+   font-weight: lighter;
+   letter-spacing: .5px;
+   padding: 6px;
+}
+
+.spreadLinks a:hover {
+   border-bottom: 2px solid grey;
+   padding-bottom: 7px;
+   font-weight: bolder;
+   cursor: pointer;
+}
+
+/* The second part White Part */
+
+.secondLinks {
+   background: white;
+   margin-bottom: 25px; margin-top: 25px;
+   text-align: center;
+  
+   /* text-align: center; */
+}
+
+.dropdown-options {
+   background: white;
+}
+
+.secondLinks a {
+   text-decoration: none; 
+   font-size: 13px;
+   font-weight: bolder;
+   padding: 20px;
+   color: rgb(126, 107, 107);
+}
+
+.dropdown {
+   display: inline-block;
+   position: relative;
+}
+
+.dropdown-options {
+   display: none;
+   position: absolute;
+   overflow: auto;
+   text-align: left;
+   width: 180px;
+   
+}
+
+
+
+.dropdown-options a{
+   display: block;
+   
+}
+
+.dropdown-options a:hover{
+   color: rgb(25, 68, 25);
+   background-color: rgb(218, 216, 216);
+   transition: ease-in-out .2s;
+}
+
+
+.dropdown:hover .dropdown-options {
+   display: block;
+}
+
+
+/* second dropdown */
+
+
+#drop-down {
+   display: inline-block;
+   position: relative;
+}
+
+#drop-down:hover #dropdown-options {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: repeat(5,1fr);
+   padding: 10px;
+}
+
+#dropdown-options {
+   display: none;
+   position: absolute;
+   overflow: auto;
+   text-align: left;
+   width: 500px;
+}
+
+
+
+#dropdown-options a{
+   display: block;
+   background: white;
+}
+
+#dropdown-options a:hover{
+   color: rgb(25, 68, 25);
+   background-color: rgb(218, 216, 216);
+   transition: ease-in-out .2s;
+}
+
+/* third dropdown */
+
+.dropDownThree {
+   display: inline-block;
+   position: relative;
+}
+
+.dropDownThree:hover #dropdown-options-three {
+   display: block;
+}
+
+#dropdown-options-three {
+   display: none;
+   position: absolute;
+   overflow: auto;
+   text-align: left;
+   width: 170px;
+}
+
+#dropdown-options-three a {
+   display: block;
+   background: white;
+}
+
+#dropdown-options-three a:hover {
+   color: rgb(25, 68, 25);
+   background-color: rgb(218, 216, 216);
+   transition: ease-in-out .2s;
+}
+
+/* fourthdropdown */
+
+.fourthdropdown {
+   display: inline-block;
+   position: relative;
+}
+
+#fourthoptions {
+   display: none;
+   position: absolute;
+   overflow: auto;
+   text-align: left;
+   background: white;
+}
+
+.fourthdropdown:hover #fourthoptions {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(5, 1fr);
+}
+
+
+
+#fourthoptions a:hover{
+   color: rgb(25, 68, 25);
+   background-color: rgb(218, 216, 216);
+   transition: ease-in-out .2s;
+}
+
+/* fifth dropdown */
+
+.fifthdropdown {
+   display: inline-block;
+   position: relative;
+}
+
+
+#fifthoptions {
+   display: none;
+   position: absolute;
+   text-align: left;
+   overflow: auto;
+   background: white;
+   width: 250px;
+}
+
+.fifthdropdown:hover #fifthoptions {
+   display: block;
+   color: grey;
+}
+
+#fifthoptions a{
+   display: block;
+}
+
+#fifthoptions a:hover {
+   color: rgb(25, 68, 25);
+   background-color: rgb(218, 216, 216);
+   transition: ease-in-out .2s;
+}
+
+.sixthdropdown {
+   display: inline-block;
+   position: relative;
+}
+
+#sixthoptions {
+   display: none;
+   position: absolute;
+   overflow: auto;
+   text-align: left;
+   background: white;
+   width: 250px;
+}
+
+/* seventh dropdown */
+
+.sixthdropdown:hover #sixthoptions {
+   display: block;
+}
+
+#sixthoptions a {
+   display: block;
+}
+
+#sixthoptions a:hover {
+   color: rgb(25, 68, 25);
+   background-color: rgb(218, 216, 216);
+   transition: ease-in-out .2s;
+}
+
+.seventhdropdown {
+   display: inline-block;
+   position: relative;
+}
+
+.seventhdropdown #seventhoptions {
+   display: none;
+   position: absolute;
+   overflow: auto;
+   text-align: left;
+   width: 250px;
+   background: white;
+}
+
+.seventhdropdown:hover #seventhoptions {
+   display: block;
+}
+
+
+#seventhoptions a{
+   display: block;
+}
+
+#seventhoptions a:hover {
+   color: rgb(25, 68, 25);
+   background-color: rgb(218, 216, 216);
+   transition: ease-in-out .2s;
+}
+
+
+
+
+ /* #drop-down:hover #dropdown-options {
+   display: block;
+} */
+
+
+
+
+/* dropdown menu issue */
+/* .leader {
+   background: black;
+   position: relative;
+}
+
+.leader:hover > #hover-me > #drop-down-menu > a {
+   background: black;
+}
+
+#drop-down-menu a{
+   display: none;
+}
+
+
+#hover-me:hover > #drop-down-menu a          {
+   position: absolute;
+   display: block;
+   margin-top: -40px;
+   margin-left: 140px;
+   background: grey;
+} */
+
+
+
+/* images section */
+
+#greenImages {
+   background: green;
+}
+
+.funimg{
+   padding-top: 30px;
+   padding-bottom: 30px ;
+}
+
+.funimg img {
+   width: 300px;
 }
