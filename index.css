@@ -1,8 +1,13 @@
 * {
-   font-family: 'Quicksand', sans-serif;
+   font-family: 'Jost', sans-serif;
    padding: 0;
    margin: 0;
    box-sizing: border-box;
+   
+}
+
+body {
+   background: #008751;
 }
 
 
@@ -17,7 +22,8 @@
 
 #funaabLogo {
    margin-left: 90px;
-   padding-top: 10px; padding-bottom: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
 }
 
 .spreadLinks {
@@ -33,6 +39,7 @@
    font-weight: lighter;
    letter-spacing: .5px;
    padding: 6px;
+   z-index: 2;
 }
 
 .spreadLinks a:hover {
@@ -44,19 +51,19 @@
 
 /* The second part White Part */
 
-.secondLinks {
+#whiteTop {
    background: white;
-   margin-bottom: 25px; margin-top: 25px;
+}
+
+#secondLinks {
+   background: white;
+   padding-bottom: 25px; padding-top: 25px;
    text-align: center;
-  
-   /* text-align: center; */
+   
 }
 
-.dropdown-options {
-   background: white;
-}
 
-.secondLinks a {
+#secondLinks a {
    text-decoration: none; 
    font-size: 13px;
    font-weight: bolder;
@@ -70,12 +77,18 @@
 }
 
 .dropdown-options {
+   display: block;
+}
+
+
+.dropdown-options {
    display: none;
    position: absolute;
    overflow: auto;
    text-align: left;
    width: 180px;
-   
+   background: #EDF2F7 ;
+   z-index: 1;
 }
 
 
@@ -105,6 +118,16 @@
    position: relative;
 }
 
+#dropdown-options {
+   display: none;
+   position: absolute;
+   overflow: auto;
+   text-align: left;
+   width: 500px;
+   background: #EDF2F7;
+   z-index: 1;
+}
+
 #drop-down:hover #dropdown-options {
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -112,19 +135,12 @@
    padding: 10px;
 }
 
-#dropdown-options {
-   display: none;
-   position: absolute;
-   overflow: auto;
-   text-align: left;
-   width: 500px;
-}
+
 
 
 
 #dropdown-options a{
    display: block;
-   background: white;
 }
 
 #dropdown-options a:hover{
@@ -150,11 +166,12 @@
    overflow: auto;
    text-align: left;
    width: 170px;
+   background: #EDF2F7;
+   z-index: 1;
 }
 
 #dropdown-options-three a {
    display: block;
-   background: white;
 }
 
 #dropdown-options-three a:hover {
@@ -175,7 +192,8 @@
    position: absolute;
    overflow: auto;
    text-align: left;
-   background: white;
+   background: #EDF2F7;
+   z-index: 1;
 }
 
 .fourthdropdown:hover #fourthoptions {
@@ -205,8 +223,9 @@
    position: absolute;
    text-align: left;
    overflow: auto;
-   background: white;
+   background: #EDF2F7;
    width: 250px;
+   z-index: 1;
 }
 
 .fifthdropdown:hover #fifthoptions {
@@ -224,6 +243,8 @@
    transition: ease-in-out .2s;
 }
 
+/* sixth dropdown */
+
 .sixthdropdown {
    display: inline-block;
    position: relative;
@@ -234,11 +255,12 @@
    position: absolute;
    overflow: auto;
    text-align: left;
-   background: white;
+   background: #EDF2F7;
    width: 250px;
+   z-index: 1;
 }
 
-/* seventh dropdown */
+
 
 .sixthdropdown:hover #sixthoptions {
    display: block;
@@ -254,6 +276,8 @@
    transition: ease-in-out .2s;
 }
 
+/* seventh dropdown */
+
 .seventhdropdown {
    display: inline-block;
    position: relative;
@@ -265,7 +289,8 @@
    overflow: auto;
    text-align: left;
    width: 250px;
-   background: white;
+   background: #EDF2F7;
+   z-index: 1;
 }
 
 .seventhdropdown:hover #seventhoptions {
@@ -308,7 +333,7 @@
 }
 
 
-#hover-me:hover > #drop-down-menu a          {
+#hover-me:hover > #drop-down-menu a {
    position: absolute;
    display: block;
    margin-top: -40px;
@@ -320,15 +345,204 @@
 
 /* images section */
 
-#greenImages {
-   background: green;
+/* #greenImages {
+   background: #008751;
+   border-top: #008751;
+   border-bottom: #008751;
+} */
+
+.fa-angles-left,
+.fa-angles-right {
+   font-size: 26px;
+   position: absolute;
+   top: 55%;
+   transform: translateY(-50%);
+   background: rgba(218, 216, 216 .5);
+   padding: 0 .5rem;
+   z-index: 2;
+   background: rgba(0, 0, 0 .1);
 }
+
 
 .funimg{
    padding-top: 30px;
-   padding-bottom: 30px ;
+   padding-bottom: 30px;
+   text-align: center;
+   background: rgb(238, 231, 231);
+   
 }
 
 .funimg img {
-   width: 300px;
+   width: 1300px;
+   height: 400px;
+}
+
+.fourth {
+   height: 225px;
+   position: relative;
+}
+.third,
+.first,
+.second{
+   position: absolute;
+}
+
+.second {
+   height: 225px;
+}
+
+.third {
+   height: 225px;
+}
+
+.first {
+   height: 225px;
+}
+
+.stickyPage {
+   text-align: center;
+   /* position: relative; */
+   
+}
+
+.newSticky {
+   border: 1px solid #008751;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   border-radius: 5px;
+   position: absolute;
+   top: 80%;
+   right: 25%;
+   background: White;
+   
+}
+
+.fa-book,
+.fa-clapperboard,
+.fa-scroll,
+.fa-book-journal-whills {
+   font-size: 45px;
+   display: flex;
+   color: #008751;
+}
+
+.university {
+   display: inline-block;
+   height: 100px;
+   padding: 9px;
+   text-align: center;
+   font-size: 20px;
+   line-height: 40px;
+   font-family: 'Jost', sans-serif;
+   align-items: center;
+   color: #008751;
+}
+
+.university:hover {
+   background: #18be7c;
+}
+
+/* brands */
+
+.container {
+   margin-bottom: 30px;
+   background: white;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding: 30px;
+   
+   
+}
+
+
+.shanghai {
+   width: 570px;
+   display: flex;
+   align-items: center;
+}
+.png {
+   width: 280px;
+   align-items: center;
+}
+
+.twoone,
+.num-one,
+.fifteen,
+.ninth {
+   font-weight: bolder;
+}
+
+.global {
+   color: #18be7c;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+/* three images */
+
+.greenBackground {
+   text-align: center;
+}
+
+.smallGreenImages img{
+   margin: 5px;
+   border: 5px solid #61CE70;
+   height: 271px;
+   width: 346px;
+}
+
+.smallGreenImages img:hover{
+   content: "Read More";
+   background: #61CE70;
+}
+
+/* news part */
+
+.news {
+   display: flex;
+   
+   /* grid-template-columns: repeat(2, 1fr); */
+}
+
+#updates {
+   background: #EDF2F7;
+   padding: 50px;
+}
+
+.newsUpdates {
+   margin-bottom: 25px;
+   font-size: 16px;
+}
+
+.alll{
+   font-weight: bold;
+   color: #18be7c;
+   font-size: 22px;
+}
+
+.collections{
+   background: yellowgreen;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(4, 1fr);
+}
+
+.proff {
+   width: 55px;
+}
+
+.upcoming {
+   grid-row: span 3;
+   border: none;
+   background: white;
+   box-shadow: silver;
+   margin-left: auto;
+}
+
+.newstwo {
+   grid-column: 1;
+}
+
+.newsfive {
+   grid-column: 1/2;
 }
