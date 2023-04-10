@@ -7,7 +7,8 @@
 }
 
 body {
-   background: #008751;
+   background: url(images/motion.jpg);
+   object-fit: cover;
 }
 
 
@@ -498,6 +499,10 @@ body {
 
 /* news part */
 
+#containerTwo {
+   background: #008751;
+}
+
 
 #updates {
    background: #EDF2F7;
@@ -522,6 +527,7 @@ body {
 .newnews .newupcomingtwo {
    color: #008751;
    font-size: 24px;
+   font-weight: bold;
    margin-top: 20px;
 }
 
@@ -530,6 +536,7 @@ body {
    margin-top: 15px;
    padding-bottom: 15px;
    color: #008751;
+   font-weight: bold;
    font-size: 24px;
 }
 
@@ -538,6 +545,7 @@ body {
 .updatee {
    color: #008751;
    font-size: 24px;
+   font-weight: bold;
 }
 
 .allnews{
@@ -555,16 +563,85 @@ body {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: repeat(3, 1fr);
-   background: #008751;
+   background: #EDF2F7;
+}
+
+.newtexts{
+   text-decoration: none;
+   font-size: 14px;
+   row-gap: 20px;
+   column-gap: 5px;
+   font-weight: bold;
+   width: 180px;
+   margin-left: 15px;
 }
 
 .newtexts > a {
    text-decoration: none;
-   font-size: 15px;
-   gap: 5px;
+   color: #008751
+   ;
 }
 
 .proff {
-   width: 50px;
+   width: 100px;
 }
 
+
+.newsOne,
+.newstwo,
+.newsthree,
+.newsfive,
+.newssix{
+   display: flex;
+   align-items: center;
+   padding-right: 15px;
+}
+
+/* container four */
+
+.aboutFunaab {
+   position: relative;
+}
+
+.aboutFunaab img {
+   width: 1349px;   
+}
+
+.imageText {
+   position: absolute;
+   top: 50%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   text-align: center;
+   /* margin-left: 30px;
+   margin-right: 30px; */
+   align-items: center;
+}
+
+.imageText h1 {
+   color: white;
+   font-weight: bold;
+   font-size: 80px;
+   text-align: center;
+   align-items: start;
+   width: 150px;
+   margin-left: 50px;
+}
+
+
+.read {
+   width: 600px;
+   color: white;
+   text-align: start;
+}
+
+.readmore {
+   padding-bottom: 30px;
+   font-weight: bold;
+   font-size: 26px;
+}
+
+.reading {
+   font-size: 19px;
+   color: #EDF2F7;
+}
