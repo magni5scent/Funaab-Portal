@@ -498,51 +498,73 @@ body {
 
 /* news part */
 
-.news {
-   display: flex;
-   
-   /* grid-template-columns: repeat(2, 1fr); */
-}
 
 #updates {
    background: #EDF2F7;
    padding: 50px;
 }
 
-.newsUpdates {
-   margin-bottom: 25px;
-   font-size: 16px;
-}
-
-.alll{
-   font-weight: bold;
-   color: #18be7c;
-   font-size: 22px;
-}
-
-.collections{
-   background: yellowgreen;
+.collections {
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(4, 1fr);
+   grid-template-columns: 2fr 1fr;
+}
+
+.newnews {
+   grid-row-start: 1;
+   grid-row: span 8;
+   background: white;
+   border: none;
+   border-radius: 10px;
+   text-align: center;
+   box-shadow: rgba(0, 0, 0 .1);
+}
+
+.newnews .newupcomingtwo {
+   color: #008751;
+   font-size: 24px;
+   margin-top: 20px;
+}
+
+.newupcoming{
+   border-bottom: 1px solid black;
+   margin-top: 15px;
+   padding-bottom: 15px;
+   color: #008751;
+   font-size: 24px;
+}
+
+
+
+.updatee {
+   color: #008751;
+   font-size: 24px;
+}
+
+.allnews{
+   margin-bottom: 30px;
+}
+
+#newroll {
+   background: blue;
+   display: grid;
+   grid-column: 2fr 1fr;
+}
+
+
+.news {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   background: #008751;
+}
+
+.newtexts > a {
+   text-decoration: none;
+   font-size: 15px;
+   gap: 5px;
 }
 
 .proff {
-   width: 55px;
+   width: 50px;
 }
 
-.upcoming {
-   grid-row: span 3;
-   border: none;
-   background: white;
-   box-shadow: silver;
-   margin-left: auto;
-}
-
-.newstwo {
-   grid-column: 1;
-}
-
-.newsfive {
-   grid-column: 1/2;
-}
